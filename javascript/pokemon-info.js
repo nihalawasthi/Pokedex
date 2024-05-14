@@ -1,4 +1,3 @@
-/**open info when pokemon from list is clicked */
 function openInfo(id) {
     document.getElementById('current-pokemon-empty').classList.add('hide');
 
@@ -15,7 +14,6 @@ function openInfo(id) {
     };
 };
 
-/**fetch pokemon infos */
 async function fetchPokemonInfo(id) {
     const urlPokemon = 'https://pokeapi.co/api/v2/pokemon/' + id;
     const urlSpecies = 'https://pokeapi.co/api/v2/pokemon-species/' + id;
